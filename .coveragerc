@@ -1,0 +1,16 @@
+[run]
+source = sales
+
+# Omit the following from coverage:
+omit =
+    manage.py
+    */migrations/*
+    */tests/*
+    */admin.py
+    sales/settings.py
+    sales/wsgi.py
+    sales/asgi.py
+    */__init__.py
+
+[report]
+show_missing = True
